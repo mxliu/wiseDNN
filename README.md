@@ -1,10 +1,10 @@
 Keras implementation for the wiseDNN for brain disease prognosis
 
-The code was written by Mingxia Liu and Jun Zhang, Department of Radiology at UNC. 
+The code was written by Dr. Mingxia Liu and Dr. Jun Zhang, Department of Radiology at UNC-CH. 
 
 Applications
 
-We propose a weakly-supervised Densely-connected Neural Network (wiseDNN) for brain disease prognosis using baseline MRI data and incomplete clinical scores. Specifically, we first extract multi-scale image patches (located by anatomical landmarks) from MRI to capture local-to-global structural information of images, and then develop a weakly-supervised densely-connected network for task-oriented extraction of imaging features and joint prediction of multiple clinical measures. A weighted loss function is further employed to make full use of all available subjects (even those without ground-truth scores at certain time-points) for network training.
+We propose a weakly-supervised Densely-connected Neural Network (wiseDNN) for brain disease prognosis using baseline MRI data and incomplete clinical scores. Specifically, we first extract multi-scale image patches (located by anatomical landmarks) from structural MRI to capture local-to-global structural information of images, and then develop a weakly-supervised densely-connected network for task-oriented extraction of imaging features and joint prediction of multiple clinical measures. A weighted loss function is further employed to make full use of all available subjects (even those without ground-truth scores at certain time-points) for network training.
 
 
 Prerequisites
@@ -37,5 +37,8 @@ Note we use the Keras backend as follows { "image_data_format": "channels_first"
 
 Citation
 
-If you use this code for your research, please cite our paper:
+If you use this code for your research, please cite our papers:
 
+[1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
+
+[2] Mingxia Liu, Jun Zhang, Ehsan Adeli, Dinggang Shen. Landmark-based Deep Multi-instance Learning for Brain Disease Diagnosis. Medical Image Analysis, 43: 157-168, 2018. 
