@@ -43,10 +43,3 @@
     python Main.py 
 
     Note we use the Keras backend as follows { "image_data_format": "channels_first", "epsilon": 1e-07, "floatx": "float32", "backend": "tensorflow" }
-
-
-6. Citation
-
-    [1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
-
-    [2] Mingxia Liu, Jun Zhang, Ehsan Adeli, Dinggang Shen. Landmark-based Deep Multi-instance Learning for Brain Disease Diagnosis. Medical Image Analysis, 43: 157-168, 2018. 
