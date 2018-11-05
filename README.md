@@ -34,7 +34,7 @@
 
 4. Implementation Detail
 
-    Copy the model to the folder of Model_wiseDNN/
+    Copy the model to the folder of Model/
  
     cd to folder Code/ and
 
