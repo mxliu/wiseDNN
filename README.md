@@ -2,12 +2,12 @@ Keras implementation for the wiseDNN for brain disease prognosis
 
 The code was written by Dr. Mingxia Liu and Dr. Jun Zhang, Department of Radiology at UNC-CH. 
 
-Applications
+1. Applications
 
 We propose a weakly-supervised Densely-connected Neural Network (wiseDNN) for brain disease prognosis using baseline MRI data and incomplete clinical scores. Specifically, we first extract multi-scale image patches (located by anatomical landmarks) from structural MRI to capture local-to-global structural information of images, and then develop a weakly-supervised densely-connected network for task-oriented extraction of imaging features and joint prediction of multiple clinical measures. A weighted loss function is further employed to make full use of all available subjects (even those without ground-truth scores at certain time-points) for network training.
 
 
-Prerequisites
+2. Prerequisites
 
 Linux python 2.7
 
@@ -23,7 +23,13 @@ Install Keras and dependencies
 
 Install numpywith pip install numpy
 
-Download the pretrained model from https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing
+3. Files included
+1) Source Code: Main.py, Generator.py, Loss.py, and Model.py
+2) Data: img.npy, landmark.npy
+3) Pre-trained Model: https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing
+
+
+4. Implementation Detail
 
 Copy the model to the folder of Model_wiseDNN/
 
@@ -35,7 +41,8 @@ python Main.py
 
 Note we use the Keras backend as follows { "image_data_format": "channels_first", "epsilon": 1e-07, "floatx": "float32", "backend": "tensorflow" }
 
-Citation
+
+5. Citation
 
 If you use this code for your research, please cite our papers:
 
