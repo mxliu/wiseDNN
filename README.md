@@ -46,6 +46,6 @@
 
     If you use this code for your research, please cite our papers:
 
-[1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
+    [1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
 
-[2] Mingxia Liu, Jun Zhang, Ehsan Adeli, Dinggang Shen. Landmark-based Deep Multi-instance Learning for Brain Disease Diagnosis. Medical Image Analysis, 43: 157-168, 2018. 
+    [2] Mingxia Liu, Jun Zhang, Ehsan Adeli, Dinggang Shen. Landmark-based Deep Multi-instance Learning for Brain Disease Diagnosis. Medical Image Analysis, 43: 157-168, 2018. 
