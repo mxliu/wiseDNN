@@ -23,9 +23,9 @@ Install Keras and dependencies
 
 Install numpywith pip install numpy
 
-Download the pretrained model from https://drive.google.com/file/d/1GiMgubo6swgIgMBFE-zggcwxyT5ey01U/view?usp=sharing
+Download the pretrained model from https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing
 
-Copy the model to the folder of Model/
+Copy the model to the folder of Model_wiseDNN/
 
 cd to folder Code/ and
 
