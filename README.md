@@ -9,19 +9,19 @@
 
 2. Prerequisites
 
-Linux python 2.7
+    Linux python 2.7
 
-Keras version 2.0.8
+    Keras version 2.0.8
 
-NVIDIA GPU + CUDA CuDNN (CPU mode, untested) Cuda version 8.0.61
+    NVIDIA GPU + CUDA CuDNN (CPU mode, untested) Cuda version 8.0.61
 
-Getting Started
+    Getting Started
 
-Installation
+    Installation
 
-Install Keras and dependencies
+    Install Keras and dependencies
 
-Install numpywith pip install numpy
+    Install numpywith pip install numpy
 
 3. Files included
 1) Source Code: Main.py, Generator.py, Loss.py, and Model.py
@@ -31,20 +31,20 @@ Install numpywith pip install numpy
 
 4. Implementation Detail
 
-Copy the model to the folder of Model_wiseDNN/
+    Copy the model to the folder of Model_wiseDNN/
+ 
+    cd to folder Code/ and
 
-cd to folder Code/ and
+    Apply our Pre-trained Model with GPU
 
-Apply our Pre-trained Model with GPU
+    python Main.py 
 
-python Main.py 
-
-Note we use the Keras backend as follows { "image_data_format": "channels_first", "epsilon": 1e-07, "floatx": "float32", "backend": "tensorflow" }
+    Note we use the Keras backend as follows { "image_data_format": "channels_first", "epsilon": 1e-07, "floatx": "float32", "backend": "tensorflow" }
 
 
 5. Citation
 
-If you use this code for your research, please cite our papers:
+    If you use this code for your research, please cite our papers:
 
 [1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
 
