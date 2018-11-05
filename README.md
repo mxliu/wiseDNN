@@ -14,14 +14,14 @@
     Keras version 2.0.8
 
     NVIDIA GPU + CUDA CuDNN (CPU mode, untested) Cuda version 8.0.61
-
-    Getting Started
+    
 
 3. Installation
 
     Install Keras and dependencies
 
     Install numpywith pip install numpy
+    
 
 4. Files
 
