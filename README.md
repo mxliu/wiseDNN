@@ -23,9 +23,12 @@
 
     Install numpywith pip install numpy
 
-3. Files included
+3. Files
+
     a. Source Code: Main.py, Generator.py, Loss.py, and Model.py
+    
     b. Data: img.npy, landmark.npy
+    
     c. Pre-trained Model: https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing
 
 
