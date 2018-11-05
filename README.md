@@ -17,13 +17,13 @@
 
     Getting Started
 
-    Installation
+3. Installation
 
     Install Keras and dependencies
 
     Install numpywith pip install numpy
 
-3. Files
+4. Files
 
     a. Source Code: Main.py, Generator.py, Loss.py, and Model.py
     
@@ -32,7 +32,7 @@
     c. Pre-trained Model: https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing
 
 
-4. Implementation Detail
+5. Implementation Detail
 
     Copy the model to the folder of Model/
  
@@ -45,7 +45,7 @@
     Note we use the Keras backend as follows { "image_data_format": "channels_first", "epsilon": 1e-07, "floatx": "float32", "backend": "tensorflow" }
 
 
-5. Citation
+6. Citation
 
     [1] Jun Zhang, Yue Gao, Yaozong Gao, Munsell Brent, and Dinggang Shen. Detecting Anatomical Landmarks for Fast Alzheimer’s Disease Diagnosis. IEEE Trans. on Medical Imaging, 35(12):2524-2533, 2016.
 
