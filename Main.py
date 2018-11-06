@@ -38,7 +38,7 @@ if not os.path.isdir(opt.outfolder):
 # The patches with the size of 48*48*48 will be first downsampled to 24*24*24, and then concatenated with the small-scale patches
 patch_size = 24
 
-# In this code, we attached the pre-trained model trained with 40 landmarks, which can found online ()
+# In this code, we attached the pre-trained model trained with 40 landmarks, which can found online (https://drive.google.com/file/d/1vJtDULrxEZqvxHcRiCOFzi-KrsOhKxDf/view?usp=sharing)
 landmk_num =opt.landmark
 # Since we used multi-scale patches, we need to set the scale to 2
 numofscales=opt.scale
