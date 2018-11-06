@@ -34,23 +34,22 @@ print(opt)
 if not os.path.isdir(opt.outfolder):
     os.mkdir(opt.outfolder)
 
-#We set the patch sizes as 24*24*24 and 48*48*48 in our experiment.
-# The patches with the size of 48*48*48 will be downsampled into 24*24*24 to concatenate the small-scale patches
+# We set the sizes of patches as 24*24*24 and 48*48*48 in our experiments.
+# The patches with the size of 48*48*48 will be first downsampled to 24*24*24, and then concatenated with the small-scale patches
 patch_size = 24
 
-# In this code, we attached the pre-trained model which were trained with 40 landmarks
+# In this code, we attached the pre-trained model trained with 40 landmarks, which can found online ()
 landmk_num =opt.landmark
-# Since we used multi-scale patches, we need to set the scale into 2
+# Since we used multi-scale patches, we need to set the scale to 2
 numofscales=opt.scale
-# In the training stage, we used the these weights to normalize the range of outputs (from 0 to 1)
+# In the training stage, we used the these weights to normalize the range of outputs (from 0 to 1) for four types of clinical scores
 weight = np.tile(np.array([10,40,60,30]),4)
 
-#Load the image
+# Load the image
 image =np.load('../Data/img.npy')
 
-#Load the landmarks
-# If you want to test your own data, you may need to use another code to generate the landmarks
-# https://github.com/zhangjun001/AD-Landmark-Prediction
+# Load the landmarks
+# If you want to test your own data, you may need to generate anatomical landmarks using the code in https://github.com/zhangjun001/AD-Landmark-Prediction
 new_landmark_test = np.load('../Data/landmark.npy')
 
 
@@ -63,15 +62,15 @@ patch_data_test = MultiInstance_patch(image, new_landmark_test, patch_size, subj
 M = merged_model(patch_size,landmk_num,numofscales)
 M.load_weights('../Model/DiagnosisModel{0}_scale_{1}'.format(landmk_num,numofscales))
 
-#Predict the scores
-targets =M.predict(patch_data_test,batch_size=1)
+# Predict the scores
+targets = M.predict(patch_data_test,batch_size=1)
 score = targets[0]*weight
 
-#Print results
+# Print results
 names = ['BL', 'M06', 'M12', 'M24']
 for i_time in range(4):
     print('Clinical Scores --> {0}'.format(names[i_time]) )
     print( 'CDR-SB:{0:0.2f}; ADAS-Cog11:{1:0.2f}; ADAS-Cog13:{2:0.2f}; MMSE: {3:0.2f}. '.format(
         score[i_time*4+0],score[i_time*4+1],score[i_time*4+2],score[i_time*4+3]))
-#Save the result
+# Save the result
 np.save(opt.outfolder+'predicted_scores', score)
