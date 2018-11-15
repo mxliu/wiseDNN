@@ -1,4 +1,4 @@
-    Keras implementation for the wiseDNN for brain disease prognosis
+    Keras implementation of wiseDNN for brain disease prognosis
 
     The code was written by Dr. Mingxia Liu and Dr. Jun Zhang, Department of Radiology at UNC-CH. 
 
